@@ -1,3 +1,2 @@
-release: rake db:drop
-release: rake db:create
+release: pg:reset
 release: rake db:migrate
