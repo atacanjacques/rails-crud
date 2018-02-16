@@ -21,4 +21,4 @@ deploy:
   app: rails-crud-test-env
   on:
     repo: atacanjacques/rails-crud
-    branch: travis
+    branch: master
