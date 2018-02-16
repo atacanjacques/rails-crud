@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/atacanjacques/rails-crud.svg?branch=master)](https://github.com/atacanjacques/rails-crud)
+
+
 # Rails CRUD
 
 One Paragraph of project description goes here
