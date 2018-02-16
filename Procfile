@@ -1,2 +1,1 @@
-release: pg:reset
-release: rake db:migrate
+release: rake db:schema:load
