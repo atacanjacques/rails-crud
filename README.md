@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/atacanjacques/rails-crud.svg?branch=master)](https://github.com/atacanjacques/rails-crud)
 
+[Heroku App](https://rails-crud-test-env.herokuapp.com)
+
+[Documentation](https://atacanjacques.github.io/rails-crud)
 
 # Rails CRUD
 
