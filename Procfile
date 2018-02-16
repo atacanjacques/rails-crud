@@ -1,4 +1,3 @@
-web:
-- rake db:drop
-- rake db:create
-- rake db:migrate
+web: rake db:drop
+web: rake db:create
+web: rake db:migrate
