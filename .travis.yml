@@ -1,0 +1,24 @@
+language: ruby
+rvm: 2.2
+install:
+- gem install brakeman
+- gem install flay
+- gem install cane
+script:
+- brakeman
+- flay
+- cane
+notifications:
+  email:
+    recipients:
+    - atacan.jacques@gmail.com
+    on_success: never
+    on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: ZRCnWKckoRwpHPWhJmlobWBEkphq3F1+NZ3yOQ7AUq51yVKrTe5Lob7d0oeuJTBuBygTPOoWzPYRRyq1Iee0ufeisiaP4rWD7sAIHY2D/ByGzK/wLQQ+l8rs5aXGIx/lZ6eYIlIFCoCtlhMGH27KMYAtADLT3mXcToibjJ7J6uR8tTeKk/8SQN+Ewk7q6c58M8V0rVi5lvNyChjfinuaUeZxPWVasJimL9zSvREpPyCNJHzOirq6w8Tg3u+zMLzpu+41myVOaOXk2QKhlAdBK8r30AA3mzyj7tK9KXOn5GNFofTKPAKqvHsOafQAI3ZqhbEsz2ANra/0xj63dloOPJMvuNy1ZcPqsxm5IVyo5W98vWr02x5toQA27BxweH4VFxCU+NiGMGnZTNxVDwlO2u+8cbBWbZlwDHJAtXLnh4ai62S1YpfrPBMEie+nQhjyBHgRbcC5bIwMvI+K1Up8sPGdpqiNWpyIC6H6TsKyOg8n91NYwhd5Q0zubH/ko/Gf5DEAa/yesVukVuxUS9CjmyH8/MqHhkVqyN+yV/2//uDZi4i0QFyiwX9/G9zJ/JvIOdif1RzmrxPnN8ks7c6BQil75iG1p5qZlzleyj9ni3ocryLjHe+ANNZ1nHn3wBwFK2/RIdxi+rodnQE4b4nnwtrAEpIuz4Yy6mj1Lu0Dp9k=
+  app: rails-crud-test-env
+  on:
+    repo: atacanjacques/rails-crud
+    branch: travis
